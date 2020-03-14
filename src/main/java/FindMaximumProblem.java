@@ -12,7 +12,7 @@ public class FindMaximumProblem {
         return maxResult;
     }
 
-    //METHOD THAT RETURN MAXIMUM INTEGER BETWEEN THREE INTEGER NUMBER
+    //METHOD THAT RETURN MAXIMUM FLOAT BETWEEN THREE FLOAT NUMBER
     public Float getMaximumOfFloats(Float firstNumber, Float secondNumber, Float thirdNumber) {
         Float maxResult = firstNumber;
         if (secondNumber.compareTo(maxResult) > 0) {
