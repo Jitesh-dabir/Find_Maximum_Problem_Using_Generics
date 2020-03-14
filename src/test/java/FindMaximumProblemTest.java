@@ -58,5 +58,11 @@ public class FindMaximumProblemTest {
         String maximumOfString = findMaximum.getMaximum("JITESH", "DIPESH", "AKSHAY");
         Assert.assertEquals((String) "JITESH",maximumOfString);
     }
+
+    @Test
+    public void givenThreeNumberStrings_WhenGetMaximum_ShouldReturnTheMaximumString() {
+        String maximumOfString = findMaximum.getMaximum("1", "2", "3");
+        Assert.assertEquals((String) "3",maximumOfString);
+    }
 }
 
