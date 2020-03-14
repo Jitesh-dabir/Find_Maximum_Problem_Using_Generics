@@ -43,8 +43,8 @@ public class FindMaximumProblemTest {
 
     @Test
     public void givenThreeStrings_WhenMaximumFirstString_ShouldReturnTheMaximumString() {
-        String maximumOfFloats = findMaximum.getMaximumOfString("jitesh", "dipesh", "akshay");
-        Assert.assertEquals((String) "jitesh",maximumOfFloats);
+        String maximumOfString = findMaximum.getMaximumOfString("jitesh", "dipesh", "akshay");
+        Assert.assertEquals((String) "jitesh",maximumOfString);
     }
 }
 
