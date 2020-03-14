@@ -28,5 +28,11 @@ public class FindMaximumProblemTest {
         Float maximumOfFloats = findMaximum.getMaximumOfFloats(10.2f, 2.5f, 3.6f);
         Assert.assertEquals((Float) 10.2f,maximumOfFloats);
     }
+
+    @Test
+    public void givenThreeFloats_WhenMaximumSecondNumber_ShouldReturnTheMaximum() {
+        Float maximumOfFloats = findMaximum.getMaximumOfFloats(10.2f, 20.5f, 3.6f);
+        Assert.assertEquals((Float) 20.5f,maximumOfFloats);
+    }
 }
 
