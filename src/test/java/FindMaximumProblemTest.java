@@ -66,9 +66,9 @@ public class FindMaximumProblemTest {
 
     @Test
     public void givenThreeCapitalStringsInParameterConstructor_WhenMaximumFirstString_ShouldReturnTheMaximumString() {
-        FindMaximumProblem findMaximum = new FindMaximumProblem("JITESH", "DIPESH", "AKSHAY");
+        FindMaximumProblem findMaximum = new FindMaximumProblem("JITESHD", "DIPESH", "AKSHAY");
         maximumOfString = (String) findMaximum.getMaximum();
-        Assert.assertEquals((String) "JITESH",maximumOfString);
+        Assert.assertEquals((String) "JITESHD",maximumOfString);
     }
 
     @Test
