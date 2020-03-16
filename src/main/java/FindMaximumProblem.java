@@ -1,13 +1,37 @@
 public class FindMaximumProblem {
 
-    //METHOD THAT RETURN MAXIMUM  BETWEEN THREE VALUES
-    public <T extends Comparable<T>> T getMaximum(T firstValue, T secondValue, T thirdValue) {
-        T maxResult = firstValue;
-        if (secondValue.compareTo(maxResult) > 0) {
-            maxResult = secondValue;
+    //METHOD THAT RETURN MAXIMUM INTEGER BETWEEN THREE INTEGER NUMBER
+    public Integer getMaximumOfIntegers(Integer firstNumber, Integer secondNumber, Integer thirdNumber) {
+        Integer maxResult = firstNumber;
+        if (secondNumber.compareTo(maxResult) > 0) {
+            maxResult = secondNumber;
         }
-        if (thirdValue.compareTo(maxResult) > 0) {
-            maxResult = thirdValue;
+        if (thirdNumber.compareTo(maxResult) > 0) {
+            maxResult = thirdNumber;
+        }
+        return maxResult;
+    }
+
+    //METHOD THAT RETURN MAXIMUM FLOAT BETWEEN THREE INTEGER NUMBER
+    public Float getMaximumOfFloats(Float firstNumber, Float secondNumber, Float thirdNumber) {
+        Float maxResult = firstNumber;
+        if (secondNumber.compareTo(maxResult) > 0) {
+            maxResult = secondNumber;
+        }
+        if (thirdNumber.compareTo(maxResult) > 0) {
+            maxResult = thirdNumber;
+        }
+        return maxResult;
+    }
+
+    //METHOD THAT RETURN MAXIMUM STRING BETWEEN THREE STRINGS
+    public String getMaximumOfString(String firstString, String secondString, String thirdString) {
+        String maxResult = firstString;
+        if (secondString.compareTo(maxResult) > 0) {
+            maxResult = secondString;
+        }
+        if (thirdString.compareTo(maxResult) > 0) {
+            maxResult = thirdString;
         }
         return maxResult;
     }
