@@ -1,9 +1,10 @@
 public class FindMaximumProblem <T extends Comparable<T>> {
 
     //VARIABLES
-    T firstValue;
-    T secondValue;
-    T thirdValue;
+    private T firstValue;
+    private T secondValue;
+    private T thirdValue;
+    private T maximumValue;
 
     //DEFAULT CONSTRUCTOR
     FindMaximumProblem() {
@@ -30,8 +31,16 @@ public class FindMaximumProblem <T extends Comparable<T>> {
 
     //METHOD THAT CALL INTERNAL METHOD
     public T getMaximum() {
-       return getMaximum(firstValue, secondValue, thirdValue);
+        maximumValue = getMaximum(firstValue, secondValue, thirdValue);
+        printMaximum(maximumValue);
+        return maximumValue;
     }
+
+    //METHOD THAT PRINT MAXIMUM VALUE
+    public void printMaximum(T maxValue) {
+        System.out.println("Maximum value:" +maxValue);
+    }
+
     public static void main(String[] args) {
         System.out.println("Welcome to find maximum problem");
     }
